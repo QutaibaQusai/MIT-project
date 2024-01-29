@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/index.css">
     <!-- Icon -->
     <link rel="shortcut icon" href="Img/ICON.png" type="image/x-icon">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <!-- top bar -->
@@ -151,7 +151,7 @@
     <section class="project-section" id="project">
         <h2 class="Tittle" style="color: #fff;">Projects</h2>
         <div class="content">
-            <div class="project-card">
+            <!-- <div class="project-card">
                 <div class="project-img">
                     <img src="Img/test-img-project.jpg" alt="">
                 </div>
@@ -162,7 +162,7 @@
                         <a href="#" class="More-details"> More deta</a>
                     </strong>
                 </div>
-            </div>
+            </div> -->
             <div class="project-card">
                 <div class="project-img">
                     <img src="Img/test-img-project.jpg" alt="">
@@ -216,62 +216,45 @@
     <!-- Contact section  -->
     <section class="Contact-section" id="Contact">
         <h2 class="Tittle">Let's work</h2>
-        <div class="content">
-            <!-- Card num 1 -->
-            <div class="card">
-                <div class="icon">
-                    <!-- Use picture for diferent size of secreens -->
-                    <picture>
-                        <!-- for  phone screen-->
-                        <source media="(min-width:320px)" 
-                        srcset="curriculum vitae/Img/web-icon-phone.png"  
-                        alt="build websites icon" 
-                        title="build websites icon" 
-                        >
-                        <!-- for ipad screen-->
-                        <source 
-                        srcset="curriculum vitae/Img/web-icon-tab"
-                        media="(min-width:750px)" 
-                        alt="build websites icon" 
-                        title="build websites icon"
-                        >
-                        <!-- for pc screen -->
-                        <img src="Img/phone-num-icon.gif" alt="build websites icon" title="build websites icon">
-                    </picture>
-                    <!--// use picture for diferent size of secreens //-->
-                </div>
-                <div class="information">
-                    <h3>Phone Number</h3>
-                    <p><a href="tel:+962796870523" title="My Phone Number">+962 7 9687 0523</a></p>
-                </div>
-            </div>
-            <!--// Card num 1 //-->
 
-            <!-- Card num 2 -->
-            <div class="card">
-                <div class="icon">
-                    <!-- Use picture for diferent size of secreens -->
-                    <picture>
-                        <!-- for  phone screen-->
-                        <source 
-                        media="(max-width:1024px)" 
-                        srcset=""  
-                        alt="Personal Email icon" 
-                        title="Personal Email icon" 
-                        >
-                        
-                        <!-- for pc screen -->
-                        <img src="Img/email-icon.gif" alt="build websites icon" title="build websites icon">
-                    </picture>
-                    <!--// use picture for diferent size of secreens //-->
-                </div>
-                <div class="information">
-                    <h3>Personal Email</h3>
-                    <p><a href="mailto:qutaiba.makahleh@gmail.com" title="My Email">qutaiba.makahleh@gmail.com</a></p>
+        <div class="background">
+            <div class="container">
+                <div class="screen">
+                    <div class="screen-body">
+                        <div class="screen-body-item left">
+                            <div class="app-title">
+                                <span>CONTACT</span>
+                                <span>US</span>
+                            </div>
+                        </div>
+                        <div class="screen-body-item">
+                            <div class="app-form">
+                                <form action="contact.php" method="post">
+                                    <div class="app-form-group">
+                                        <input class="app-form-control" type="text" name="name" placeholder="NAME" value="">
+                                    </div>
+                                    <div class="app-form-group">
+                                        <input class="app-form-control" type="email" name="email" placeholder="EMAIL">
+                                    </div>
+                                    <div class="app-form-group">
+                                        <input class="app-form-control" type="tel" name="contactNo" placeholder="CONTACT NO">
+                                    </div>
+                                    <div class="app-form-group message">
+                                        <input class="app-form-control" type="text" name="message" placeholder="MESSAGE">
+                                    </div>
+                                    <div class="app-form-group buttons">
+                                        <button type="button" class="app-form-button">CANCEL</button>
+                                        <button type="submit" class="app-form-button">SEND</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!--// Card num 2 //-->
         </div>
+        
+          
     </section>
     <!--// Contact section  //-->
 
@@ -302,9 +285,12 @@
             title="linkedin">
         </a>
     </footer>
-    <!--// footer //-->
+    <!-- // footer // -->
 
+    <button id="backToTopBtn" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>      
+      </button>
+    <script src="main.js"></script>
 
-    
 </body>
 </html>
