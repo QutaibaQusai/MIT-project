@@ -17,7 +17,6 @@ header{
     padding-bottom: 10px;
     background-color: #eeeeeeee;
     transition: top 0.5s ease-in-out; /* Adjust the transition duration as needed */
-
 }
 .logo{
     text-decoration: none;
