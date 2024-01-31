@@ -17,6 +17,7 @@ header{
     padding-bottom: 10px;
     background-color: #eeeeeeee;
     transition: top 0.5s ease-in-out; /* Adjust the transition duration as needed */
+
 }
 .logo{
     text-decoration: none;
@@ -61,12 +62,26 @@ section{
     font-size: 1.4em;
     font-weight: 500;
 }
-.main-section h2 span{
-    display: inline-block;
-    margin-top: 10px;
-    color: 	#1dd9cf;
-    font-size: 3em;
-    font-weight: 600;
+.typing-demo {
+  width: 22ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  /* font-family: monospace; */
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
 }
 .main-section h3 {
     color: #ffffff;
@@ -385,3 +400,5 @@ footer img:hover{
     }
   }
   
+
+ 
