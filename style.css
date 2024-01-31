@@ -6,41 +6,62 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-header{
-    width: 100%;
-    position: fixed;
-    z-index: 999;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #eeeeeeee;
-    transition: top 0.5s ease-in-out; /* Adjust the transition duration as needed */
 
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #eeeeeeee;
+  transition: top 0.5s ease-in-out;
 }
-.logo{
-    text-decoration: none;
-    color: #002454;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 1.8em;
-    padding-left: 200px;
+
+.logo {
+  text-decoration: none;
+  color: #002454;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.8em;
+  padding-left: 20px; /* Adjusted padding for smaller screens */
 }
-.navigation{
-    padding-right: 200px;
+
+.navigation {
+  flex: 1; /* Takes remaining space */
+  display: flex;
+  justify-content: flex-end; /* Align navigation to the right on larger screens */
+  padding: 0 20px; /* Adjusted padding for smaller screens */
 }
-.navigation a{
-    color: #002454;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1.1em;
-    padding-left:30px ;
-    transition: color,0.5s;
+
+.navigation a {
+  color: #002454;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1em;
+  padding-left: 20px;
+  padding-right: 20px; /* Adjusted padding for smaller screens */
+  transition: color 0.5s;
 }
-.navigation a:hover{
-    color: 	#000000;
+
+@media (max-width: 768px) {
+  .logo {
+      padding-left: 10px; /* Adjusted padding for even smaller screens */
+  }
+
+  .navigation {
+      justify-content: center; /* Align navigation to the center on smaller screens */
+      padding: 10px; /* Adjusted padding for smaller screens */
+  }
+
+  .navigation a {
+      padding: 10px; /* Adjusted padding for smaller screens */
+  }
 }
+
 section{
     padding: 100px 200px ;
 
@@ -48,7 +69,7 @@ section{
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
   section {
-      padding: 30px 20px; /* Adjust as needed for even smaller screens */
+      padding: 30px 20px; 
   }
 }
 .main-section{
@@ -74,7 +95,7 @@ section{
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
-  font-family: monospace;
+  /* font-family: monospace; */
   font-size: 2em;
 }
 
